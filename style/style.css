@@ -440,11 +440,9 @@
     margin-right: 20px;
 }
 .messengers a0:hover{
+    cursor: pointer;
     opacity: 0.5;
     transform: scale(0.95);
-}
-.messengers a0:hover{
-    opacity: 0.5;
 }
 .bikini-bottom-bg{
     width: 100%;
