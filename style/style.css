@@ -439,8 +439,9 @@
 .messengers img{
     margin-right: 20px;
 }
-.messengers a0{
-    cursor: pointer;
+.messengers a0:hover{
+    opacity: 0.5;
+    transform: scale(0.95);
 }
 .messengers a0:hover{
     opacity: 0.5;
