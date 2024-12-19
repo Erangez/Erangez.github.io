@@ -392,40 +392,47 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
-.contacts p0{
+.contacts-email{
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat-SemiBold;
+    margin: 10px 0;
+}
+.contacts-phone{
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat-SemiBold;
+    margin: 10px 0;
+}
+.contacts-header{
     color: white;
     font-size: 32px;
     font-family: Montserrat-Regular;
     margin: 10px 0;
 }
-.contacts a{
-    color: white;
-    font-size: 20px;
-    font-family: Montserrat-SemiBold;
-    margin: 10px 0;
-}
-.contacts a1{
-    color: white;
-    font-size: 20px;
-    font-family: Montserrat-SemiBold;
-    margin: 20px 0 0 0;
-}
-.contacts a2{
-    color: white;
-    font-size: 16px;
-    font-family: Montserrat-Regular;
-    margin-bottom: 10px;
-    cursor: pointer;
-
-}
-.contacts p1{
+.contacts-explanation{
     color: white;
     font-size: 14px;
     font-family: Montserrat-Regular;
 }
-.contacts p2{
+.messengers-icon:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+.contacts-info-downloadable{
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    margin-bottom: 10px;
+}
+.contacts-info-downloadable:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+.contacts-info{
     color: white;
     font-size: 16px;
     font-family: Montserrat-Regular;
@@ -438,11 +445,6 @@
 }
 .messengers img{
     margin-right: 20px;
-}
-.messengers a0:hover{
-    cursor: pointer;
-    opacity: 0.5;
-    transform: scale(0.95);
 }
 .bikini-bottom-bg{
     width: 100%;
