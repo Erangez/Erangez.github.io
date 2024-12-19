@@ -1,0 +1,549 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+	margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../static/fonts/Montserrat-Bold.ttf)
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../static/fonts/Montserrat-Medium.ttf)
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../static/fonts/Montserrat-Regular.ttf)
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url(../static/fonts/Montserrat-SemiBold.ttf)
+}
+.main-header-top{
+    width: 100%;
+    background-color: black;
+    margin: 0;
+    padding: 10px;
+}
+.main-header-top-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 38px;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 28px;
+    font-family: Montserrat-Bold;
+}
+.right-block{
+    display: flex;
+    margin-left: auto;
+}
+.login-menu{
+    display: flex;
+    justify-content: space-between;
+    width: 250px;
+    align-items: center;
+}
+.enter-login-button{
+    transition: all 300ms;
+    background-color: transparent;
+    border: 0, solid, transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat-Medium;
+}
+.main-header-bottom{
+    width: 100%;
+    background-color: #193328;
+    margin: 0;
+    padding: 10px;
+}
+.main-header-bottom-center{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    align-items: center;
+    height: 87px;
+    max-width: 1480px;
+    margin: 0 auto;
+    padding: 0;
+    color: white;
+    font-size: 18px;
+    font-family: Montserrat-Medium;
+}
+.main-page{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    padding-top: 0;
+}
+.ad-1-background{
+    width: 100%;
+    background: linear-gradient(#77F7C2,#193328 );
+}
+.ad-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1480px;
+    margin: 0 auto;
+    height: 713px;
+    
+}
+.ad-1-text-main{
+    margin: 0 auto;
+    color: white;
+    padding-left: 30px;
+    font-size: 80px;
+    margin: 0;
+    font-family: Montserrat-Bold;
+}
+.ad-1-text-small{
+    max-width: 400px;
+    padding-top: 30px;
+    color: white;
+    padding-left: 30px;
+    font-size: 36px;
+    font-family: Montserrat-SemiBold;
+}
+.bonus-card{
+    max-width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    margin-right: 150px;
+    filter: drop-shadow(4px 10px 4px 0px rgba(0, 0, 0, 0.5));
+}
+.crossing{
+    width: 100%;
+    height: 80px;
+    background-color: #193328;
+}
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 548px;
+    max-width: 1480px;
+    margin: 0 auto;
+    margin-top: 43px;
+}
+.drinks{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    
+}
+.drinks-title{
+    color: black;
+    height: 40px;
+    font-size: 40px;
+    font-family: Montserrat-Bold;
+    text-decoration: underline;
+}
+.two-lists{
+    display: flex;
+    flex-direction: row;
+}
+.list{
+    width: 299px;
+    height: 416px;
+    margin: 58px;
+    background-color: #77F7C2;
+    border-radius: 5%;
+    box-shadow: 5px 5px 4px 0px rgba(25, 51, 40, 100%);
+}
+.content{
+    padding: 30px;
+    color: #193328;
+    font-size: 24px;
+    font-family: Montserrat-SemiBold;
+    line-height: 50px;
+
+}
+.list-header{
+    font-size: 32px;
+    font-family: Montserrat-Bold;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    align-items: center;
+}
+.name-price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.name-price p1{
+    font-family: Montserrat-Bold;
+}
+.name-price p2{
+    line-height: 30px;
+    font-family: Montserrat-Bold;
+    padding-left: 10px ;
+    border-left: 3px solid #193328;
+}
+.list-icon{
+    max-width: 35px;
+    max-height: 35px;
+    margin-left: 10px;
+}
+.tea-list{
+    width: 299px;
+    height: 416px;
+    margin: 58px;
+    background-color: #77F7C2;
+    border-radius: 5%;
+    box-shadow: 5px 5px 4px 0px rgba(25, 51, 40, 100%);
+}
+.syrups{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    border-radius: 5%;
+    border: 4px, solid, black;
+}
+.syrups-header{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    padding: 0 10px;
+    font-size: 32px;
+    font-family: Montserrat-Regular;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+}
+.syrup-content{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 20px;
+    font-size: 32px;
+    font-family: Montserrat-Bold;
+}
+.syrup-names{
+    font-size: 24px;
+    font-family: Montserrat-SemiBold;
+    line-height: 50px;
+}
+.desserts-header{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 40px;
+    padding: 30px 10px;
+    margin: 0 auto;
+    font-family: Montserrat-Bold;
+    border-bottom: 3px solid black;
+    margin-bottom: 30px;
+}
+.desserts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1365px;
+    width: 90%;
+    height: 738px;
+    margin: 0 auto;
+    background: linear-gradient(168deg,#193328, #77F7C2);
+    border-radius: 3%;
+    box-shadow:  14px 13px 4px rgba(25, 51, 40, 40%);
+    margin-bottom: 80px;
+}
+.desserts-logo{
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-family: Montserrat-Bold;
+    color: white;
+    margin: 20px;
+    margin-left: auto;
+}
+.desserts-content{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    margin-right: auto;
+}
+.desserts-content p{
+    font-size: 48px;
+    font-family: Montserrat-Bold;
+    color: white;
+}
+.desserts-content p1{
+    font-size: 30px;
+    font-family: Montserrat-SemiBold;
+    color: white;
+}
+.chocolatka{
+    max-width: 100%;
+    max-height: auto;
+    margin-left: auto;
+    filter: drop-shadow(4px 10px 4px 0px rgba(0, 0, 0, 0.5));
+}
+.review-beauty-bg{
+    width: 100%;
+    height: 798px;
+    background-image: url("../images/background.png");
+    background-size: cover;
+}
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1480px;
+    
+}
+.review p{
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: Montserrat-Bold;
+    color: white;
+}
+.review-logo{
+    font-size: 40px;
+    font-family: Montserrat-Bold;
+    color: white;
+    margin: 20px;
+    margin-left: auto;
+    
+}
+.profile-icon{
+    margin-top: 50px;
+}
+.review-text{
+    margin-top: 30px;
+    padding: 10px 0;
+    max-width: 555px;
+    color: white;
+    font-size: 24px;
+    font-family: Montserrat-Medium;
+    text-align: center;
+    border-top: 3px solid rgba(255,255,255,50%);
+    border-bottom: 3px solid rgba(255,255,255,50%);
+}
+.nice-header-bg{
+    margin-top: 80px;
+    height: 325.84px;
+    background-image: url("../images/background-2.png");
+    background-size: cover;
+}
+.nice-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 325.84px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1480px;
+    color: white;
+    font-size: 120px;
+    font-family: Montserrat-Bold;
+}
+.beauty-cup{
+    max-width: 100%;
+    max-height: 280px;
+    margin-left: auto;
+}
+.geolocation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 330px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1480px;
+    color: black;
+    font-size: 48px;
+    font-family: Montserrat-SemiBold;
+}
+.footer-bg{
+    background-color:#193328;
+    height: 624px;
+    width: 100%;
+}
+.footer{
+    height: 624px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1480px;
+}
+.footer-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.contacts{
+    margin-top: 100px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contacts-email{
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat-SemiBold;
+    margin: 10px 0;
+}
+.contacts-phone{
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat-SemiBold;
+    margin: 10px 0;
+}
+.contacts-header{
+    color: white;
+    font-size: 32px;
+    font-family: Montserrat-Regular;
+    margin: 10px 0;
+}
+.contacts-explanation{
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat-Regular;
+}
+.messengers-icon:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transform: scale(0.95);
+}
+.contacts-info-downloadable{
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    margin-bottom: 10px;
+}
+.contacts-info-downloadable:hover{
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(0.98);
+}
+.contacts-info{
+    color: white;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    margin-bottom: 10px;
+}
+.messengers{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.messengers img{
+    margin-right: 20px;
+}
+.bikini-bottom-bg{
+    width: 100%;
+    height: 163px;
+    background-color: #0c0c0c;
+}
+.bikini-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1480px;
+    margin: 81.5px auto 81.5px auto;
+    color: white;
+    font-size: 20px;
+    font-family: Montserrat-Regular;
+}
+@media(max-width: 1210px){
+    .menu{
+        flex-direction: column;
+        height: 1600px;
+    }
+    .drinks{
+        width: 100%;
+    }
+    .two-lists{
+        flex-direction: column;
+    }
+    .syrups{
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media(max-width: 900px){
+    .footer-bg{
+        height: 1400px;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 740px){
+    .beauty-cup{
+        max-width: 100%;
+        max-height: 200px;
+        margin-left: auto;
+    }
+    .nice-header{
+        font-size: 80px;
+    }
+}
+@media(max-width: 520px ){
+    .main-header-bottom-center{
+        font-size: 14px;
+        width: 200px;
+    }
+    .main-header-top-center{
+        font-size: 22px;
+    }
+    .desserts-logo{
+        font-size: 32px;
+    }
+    .desserts-content p{
+        font-size: 32px;
+    }
+    .desserts-content p1{
+        font-size: 22px;
+    }
+    .review-logo{
+        font-size: 32px;
+    }
+    .review p{
+        font-size: 32px;
+    }
+    .beauty-cup{
+        max-width: 100%;
+        max-height: 150px;
+        margin-left: auto;
+    }
+    .nice-header{
+        font-size: 60px;
+    }
+    .geolocation{
+        flex-direction: column;
+        text-align: center;
+        font-size: 40px;
+    }
+}
+@media(max-width: 380px ){
+    .enter-login-button{
+        font-size: 12px;
+    }
+    .login-menu{
+        width: 180px;
+    }
+    .ad-1-text-main{
+        font-size: 70px;
+    }
+    .ad-1-text-small{
+        font-size: 30px;
+    }
+}
