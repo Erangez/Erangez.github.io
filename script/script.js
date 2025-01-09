@@ -1,3 +1,4 @@
+// Статичная шапка
 window.onscroll = function(){
     stick_Header();
 }
@@ -12,7 +13,7 @@ function stick_Header(){
         header.classList.remove("main-header-stick")
     }
 }
-
+// Окно входа/регистрации
 const modal = document.getElementById("modalOut");
 const modalOpen = document.getElementById("modalOpen");
 const modalClose = document.getElementById("modalClose");
@@ -41,7 +42,7 @@ registerTab.onclick = function(){
     registerForm.classList.add("show");
     enterForm.classList.remove("show");
 }
-
+// Проверка пароля на совпадение
 const password = document.getElementById("password-reg");
 const confirm_password = document.getElementById("repeat-password");
 function validatePassword(){
@@ -54,3 +55,24 @@ function validatePassword(){
 }
 password.onchange = validatePassword;
 confirm_password.onkeyup = validatePassword;
+// Скроллинг
+const blocks = document.querySelectorAll('.ad-block');
+let currentIndex = 0;
+
+function showNextBlock(){
+    blocks[currentIndex].style.left = '-100vw';
+    currentIndex = (currentIndex + 1) % blocks.length;
+    blocks[currentIndex].style.left = '0';
+}
+setInterval(showNextBlock, 6000);
+// Изменение содержания кнопки
+/*const button = document.getElementById("modalOpen");
+window.addEventListener("resize", function(){
+    if(window.outerWidth < 300){
+        button.innerText = "Войти / Зарег..";
+    }
+    else{
+        button.innerText = "Войти / Зарегистрироваться";
+    }
+    console.log("F:", window.outerWidth);
+})*/

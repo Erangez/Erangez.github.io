@@ -169,7 +169,7 @@
 .main-header-bottom-center{
     display: flex;
     justify-content: space-between;
-    width: 500px;
+    width: 450px;
     align-items: center;
     height: 87px;
     max-width: 1480px;
@@ -185,26 +185,44 @@
 .main-page{
     display: flex;
     flex-direction: column;
-    width: 100%;
     padding: 0;
     padding-top: 0;
-}
-.ad-1-background{
-    width: 100%;
-    background: linear-gradient(#77F7C2,#193328 );
 }
 /*
     --Рекламные банеры--
 */
-.ad-1{
+.ad-background{
+    z-index: -1;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 1480px;
-    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    background: linear-gradient(#77F7C2,#193328 );
+    overflow: hidden;
     height: 713px;
 }
-.ad-1-text-main{
+.ad-block{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+    width: 100%;
+    max-width: 1480px;
+    height: 713px;
+    margin: 0 auto;
+    transition: left 1.5s ease-in-out;
+    left: -100vw;
+}
+#ad-block-1{
+    left: 0;
+}
+.ad-block-text{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.ad-text-main{
     margin: 0 auto;
     color: white;
     padding-left: 30px;
@@ -212,7 +230,7 @@
     margin: 0;
     font-family: Montserrat-Bold;
 }
-.ad-1-text-small{
+.ad-text-small{
     max-width: 400px;
     padding-top: 30px;
     color: white;
@@ -220,11 +238,20 @@
     font-size: 36px;
     font-family: Montserrat-SemiBold;
 }
-.bonus-card{
-    max-width: 100%;
-    max-height: auto;
-    margin: auto 150px 50px auto;
+.ad-image{
+    width: 50%;
+    height: auto;
+    margin: auto auto 50px auto;
     filter: drop-shadow(4px 10px 4px 0px rgba(0, 0, 0, 0.5));
+}
+#ad-block-2 img{
+    border-radius: 20px;
+}
+#ad-block-1 .ad-block-text{
+    max-width: 100px;
+}
+#ad-block-2 .ad-block-text{
+    max-width: 100px;
 }
 .crossing{
     width: 100%;
@@ -258,6 +285,7 @@
 .two-lists{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 .list{
     width: 299px;
@@ -314,9 +342,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 400px;
     border-radius: 5%;
     border: 4px, solid, black;
+    margin: 0 30px;
 }
 .syrups-header{
     display: flex;
@@ -327,6 +356,7 @@
     font-family: Montserrat-Regular;
     border-top: 3px solid black;
     border-bottom: 3px solid black;
+    text-align: center;
 }
 .syrup-content{
     padding-top: 30px;
@@ -392,11 +422,12 @@
 }
 .chocolatka{
     max-width: 100%;
-    max-height: auto;
-    margin-left: auto;
+    margin: auto 0 50px auto;
     filter: drop-shadow(4px 10px 4px 0px rgba(0, 0, 0, 0.5));
 }
 .review-beauty-bg{
+    display: flex;
+    flex-direction: column;
     width: 100%;
     height: 798px;
     background-image: url("../images/background.png");
@@ -408,13 +439,12 @@
     align-items: center;
     margin: 0 auto;
     max-width: 1480px;
-    
 }
-.review p{
-    margin-top: 30px;
+.review-beauty-bg p{
     font-size: 40px;
     font-family: Montserrat-Bold;
     color: white;
+    margin: 30px auto 0 auto;
 }
 .review-logo{
     font-size: 40px;
@@ -422,10 +452,15 @@
     color: white;
     margin: 20px;
     margin-left: auto;
-    
 }
 .profile-icon{
     margin-top: 50px;
+}
+.review-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 .review-text{
     margin-top: 30px;
@@ -581,10 +616,23 @@
     }
     .two-lists{
         flex-direction: column;
+        align-items: center;
     }
     .syrups{
-        width: 70%;
+        width: 350px;
         margin: 0 auto;
+    }
+    .review-container{
+        flex-direction: column;
+    }
+    
+}
+@media(max-width: 1080px){
+    .ad-text-main{
+        font-size: 60px;
+    }
+    .ad-text-small{
+        font-size: 28px;
     }
 }
 @media(max-width: 900px){
@@ -594,6 +642,14 @@
     .footer-content{
         flex-direction: column;
         align-items: center;
+    }
+}
+@media(max-width: 800px){
+    .ad-text-main{
+        font-size: 55px;
+    }
+    .ad-text-small{
+        font-size: 24px;
     }
 }
 @media (max-width: 740px){
@@ -617,8 +673,11 @@
     .main-header-top-center{
         font-size: 22px;
     }
-    .syrups-header{
-        text-align: center;
+    .ad-text-main{
+        font-size: 45px;
+    }
+    .ad-text-small{
+        font-size: 20px;
     }
     .desserts-logo{
         font-size: 32px;
@@ -630,9 +689,12 @@
     .desserts-content p1{
         font-size: 22px;
     }
+    .chocolatka{
+        margin-top: 50%;
+    }
     .review-logo{
         font-size: 32px;
-        margin-left: 20px;
+        margin: 20px auto;
     }
     .review p{
         font-size: 32px;
@@ -641,6 +703,9 @@
         max-width: 100%;
         max-height: 150px;
         margin-left: auto;
+    }
+    .review-text{
+        font-size: 20px;
     }
     .nice-header{
         font-size: 60px;
@@ -657,6 +722,9 @@
 }
 @media(max-width: 380px ){
     .tab{
+        font-size: 20px;
+    }
+    .form h3{
         font-size: 26px;
     }
     .enter-login-button{
@@ -665,10 +733,30 @@
     .login-menu{
         width: 180px;
     }
-    .ad-1-text-main{
-        font-size: 70px;
+    .ad-text-main{
+        font-size: 40px;
     }
-    .ad-1-text-small{
-        font-size: 30px;
+    .ad-text-small{
+        font-size: 18px;
     }
+    .syrups{
+        width: 300px;
+    }
+    .nice-header p{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .nice-header img{
+        display: none;
+    }
+    .review-text{
+        font-size: 16px;
+    }
+    .geolocation p{
+        font-size: 28px;
+    }
+    .contacts{
+        margin-left: 10px;
+    }
+    
 }
