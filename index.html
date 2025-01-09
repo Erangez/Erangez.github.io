@@ -7,17 +7,61 @@
     <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
+    <!--Окно входа/регистрации-->
+    <div class="modal-out" id="modalOut">
+        <div class="modal">
+            <button class = "close-button" id = "modalClose">X</button>
+            <div class="modal-navigation">
+                <button class = "tab active" id="enterTab">Вход</button>
+                <button class = "tab" id="registerTab">Регистрация</button>
+            </div>
+            <!--Форма для входа-->
+            <form>
+                <div class="form show" id="enterForm">
+                    <h3>Вход</h3>
+                    <div class = "form-group">
+                        <input class="form-control item" type="email" name="email-enter" id="email-enter" placeholder="Email" required>
+                    </div>
+                    <div class = "form-group">
+                        <input class="form-control item" type="password" name="Пароль-вход" minlength="8" id="password-enter" placeholder="Пароль" required>
+                    </div>
+                    <div class = "form-group" style="margin: 5px auto;">
+                        <button class="tab" type="submit">Вход в аккаунт</button>
+                    </div>
+                </div>
+            </form>
+            <!--Форма для регистрации-->
+            <form>
+                <div class="form" id="registerForm">
+                    <h3>Регистрация</h3>
+                    <div class = "form-group">
+                        <input class="form-control item" type="email" name="email" id="email-reg" placeholder="Email" required>
+                    </div>
+                    <div class = "form-group">
+                        <input class="form-control item" type="password" name="Пароль" minlength="8" id="password-reg" placeholder="Пароль" required>
+                    </div>
+                    <div class = "form-group">
+                        <input class="form-control item" type="password" name="Пароль-повтор" minlength="8" id="repeat-password" placeholder="Повторите пароль" required>
+                    </div>
+                    <div class = "form-group" style="margin: 5px auto;">
+                        <button class="tab" type="submit">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--Динамическая шапка-->
     <header class = "main-header-top">
         <div class = "main-header-top-center">
             <p>COFFEE SHOP</p>
             <div class = "right-block">
                 <nav class = "login-menu">
-                    <button class = "enter-login-button">Войти</button>
-                    <button class = "enter-login-button">Зарегистрироваться</button>
+                    <button class = "enter-login-button" id="modalOpen">Войти / Зарегистрироваться</button>
                 </nav>
             </div>
         </div>
     </header>
+    <!--Навигационная шапка-->
     <header class = "main-header-bottom">
         <div class = "main-header-bottom-center">
             <p>Главная</p>
@@ -25,20 +69,24 @@
             <p>О нас</p>
         </div>
     </header>
+    <!--Страница-->
     <section class = "main-page">
+        <!--Рекламные постеры-->
         <div class = "ad-1-background">
             <div class = "ad-1">
             <p class = "ad-1-text-main">Акция</p>
             <p class = "ad-1-text-small">Дарим бонусную карту каждому 100 клиенту</p>
             <img class = "bonus-card" src="images/Bonus_Card.png" alt="Бонусная карта">
+             </div>
         </div>
-        </div>
-        <!--Меню напитков-->
         <div class = "crossing"></div>
+         <!--Меню напитков-->
         <div class = "menu">
+            <!--Напитки-->
             <div class = "drinks">
                 <div class = "drinks-title"><p>Напитки</p></div>
                 <div class = "two-lists">
+                    <!--Кофе-->
                     <div class = "list">
                         <div class = "content"> 
                             <div class = "list-header">
@@ -51,6 +99,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Чай-->
                     <div class = "list">
                         <div class = "content">
                             <div class = "list-header">
@@ -65,6 +114,7 @@
                     </div>
                 </div>
             </div>
+            <!--Сиропы-->
             <div class = "syrups">
                 <div class = "syrups-header">Добавь в свой кофе</div>
                 <div class = "syrup-content">
@@ -144,9 +194,13 @@
                 </div>
             </div>
         </div>
+        <!--Футер продолжение-->
         <div class = "bikini-bottom-bg">
-            <div class="bikini-bottom">© 2024 COFFEE SHOP</div>
+            <div class="bikini-bottom">
+                <p>© 2024-2025 COFFEE SHOP | Designed by BVT-242</p>
+            </div>
         </div>
     </section>
+    <script src="script/script.js"></script>
 </body>
 </html> 
