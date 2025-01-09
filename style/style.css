@@ -656,6 +656,9 @@
     }
 }
 @media(max-width: 380px ){
+    .tab{
+        font-size: 26px;
+    }
     .enter-login-button{
         font-size: 12px;
     }
