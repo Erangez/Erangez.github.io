@@ -66,7 +66,7 @@ function showNextBlock(){
 }
 setInterval(showNextBlock, 6000);
 // Изменение содержания кнопки
-/*const button = document.getElementById("modalOpen");
+const button = document.getElementById("modalOpen");
 window.addEventListener("resize", function(){
     if(window.outerWidth < 300){
         button.innerText = "Войти / Зарег..";
@@ -75,4 +75,4 @@ window.addEventListener("resize", function(){
         button.innerText = "Войти / Зарегистрироваться";
     }
     console.log("F:", window.outerWidth);
-})*/
+})
